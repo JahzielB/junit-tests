@@ -21,7 +21,13 @@ public class StudentTest {
     }
 
     @Test
-    public void testGradeMethods() {
+    public void testAddGrade() {
+        student.addGrade(50);
+        assertEquals(50, student.getGrades().get(0), 0);
+    }
+
+    @Test
+    public void testGradeAverage() {
         student.addGrade(20);
         student.addGrade(50);
         assertEquals(35, student.getGradeAverage(), 0);

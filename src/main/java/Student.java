@@ -23,6 +23,10 @@ public class Student {
         this.grades.add(grade);
     }
 
+    public ArrayList<Integer> getGrades() {
+        return grades;
+    }
+
     public double getGradeAverage() {
         int counter = 0;
         int total = 0;
